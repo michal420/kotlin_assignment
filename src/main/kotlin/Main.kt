@@ -96,6 +96,7 @@ fun printTriangleForSymbolInRowsAntonio(symbol: String, number: Int) {
     for (i in 1..number) {
         val str: String = symbol.repeat(i)
         println(str)
+        // Accepted it
     }
 }
 
