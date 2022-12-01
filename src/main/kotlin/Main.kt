@@ -86,6 +86,19 @@ fun printTriangleForSymbolInRows(c: Char, num: Int): Unit {
     }
 }
 
+// 5 Alternative solution - if you need
+fun printTriangleForSymbolInRowsAntonio(symbol: String, number: Int) {
+    if (number >= 10) {
+        println("Too many numbers")
+        return
+    }
+
+    for (i in 1..number) {
+        val str: String = symbol.repeat(i)
+        println(str)
+    }
+}
+
 // 6
 fun returnRandomStringFromList(strings: List<String>): String {
     val i = Random.nextInt(0, strings.size)
